@@ -35,6 +35,10 @@ h2 {
   
 }
 
+h4 {
+  margin-top: 1rem;
+}
+
 
 /* ----------- HEADER ----------*/
 .header {
@@ -306,7 +310,6 @@ h3 {
   width: 75%;
   margin: 8rem auto;
   justify-content: space-between;
-  align-items: center;
 }
 
 .section__map {
@@ -345,22 +348,22 @@ h3 {
 
 input {
   height: 2.5rem;
-  border-radius: 4px;
-  background-color: rgb(230, 228, 228);
   border: none;
+  border-bottom: 1px solid var(--font-color);
 }
 
 textarea {
-  height: 5rem;
-  border-radius: 4px;
-  background-color: rgb(230, 228, 228);
   border: none;
+  border-bottom: 1px solid var(--font-color);
+
 }
 
 .secton__form-button {
   background-color: var(--first-color);
   width: 6rem;
   border: none;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .secton__form-button:hover {
@@ -430,26 +433,28 @@ iframe {
   color: var(--font-color);
 }
 
+.footer__icons a i {
+  color: #fff;
+}
+
 
 /* ----------- INGRESAR - REGISTRARSE ----------*/
 i.fa-solid.fa-arrow-left {
-  color: #fff;
+  color: var(--first-color);
   font-size: 1.5rem;
 }
 
-i.fa-solid.fa-arrow-left:hover {
-  color: var(--first-color);
-}
 
 .hero__ingresar {
   display: flex;
 }
 
 .container-hero-imagen {
-  background-image: url(../assets/img-hero.png);
+  background-image: url(../assets/img-login.jpg);
   width: 50%;
   height: 100vh;
   background-size: cover;
+  background-position: center;
 }
 
 .container-hero-ingresar {
@@ -470,13 +475,17 @@ i.fa-solid.fa-arrow-left:hover {
   text-align: center;
 }
 
+.hero__container img {
+  width: 10rem;
+}
+
 .container-inputs {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   text-align: start;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .input-container {
@@ -507,8 +516,14 @@ i.fa-solid.fa-arrow-left:hover {
 }
 
 .input-login {
-  padding: 10px;
   width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.input-login::placeholder {
+  color: var(--font-color);
 }
 
 .hero__container p a {
@@ -523,6 +538,14 @@ i.fa-solid.fa-arrow-left:hover {
   gap: 0.5rem;
 }
 
+.secton__form-button.button-ingresar {
+  color: #fff;
+}
+
+.secton__form-button.button-registrarse {
+  color: #fff;
+  width: 7rem;
+}
 
 @media (max-width: 992px) {
 
