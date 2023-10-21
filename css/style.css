@@ -566,7 +566,11 @@ i.fa-solid.fa-arrow-left:hover {
 }
 
 
-
+.acepto-terminos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 
 
@@ -579,17 +583,12 @@ i.fa-solid.fa-arrow-left:hover {
   /* ----------- HEADER ----------*/
   .header {
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 0px 70px;
 
   }
 
   .header__logo-1 {
-    display: none;
-  }
-
-  .header__logo-2 {
     display: block;
-    width: 1.5rem;
   }
 
   .navbar__list {
@@ -601,7 +600,7 @@ i.fa-solid.fa-arrow-left:hover {
     left: 0;
     width: 100%;
     gap: 1.5rem;
-    padding: 20px 0 30px 30px;
+    padding: 20px 0 30px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -624,6 +623,28 @@ i.fa-solid.fa-arrow-left:hover {
     display: flex;
   }
 
+
+  /* ----------- ABOUT ----------*/
+  .section__about-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+
+  .section__about-info {
+    order: 1;
+    text-align: center;
+  }
+
+  .section__about-img {
+    order: 2;
+    display: flex;
+  }
+
+  .section__about-img img {
+    width: 60%;
+    margin: 0 auto;
+  }
 
 }
 
@@ -783,7 +804,6 @@ i.fa-solid.fa-arrow-left:hover {
 
   .hero__container.registrarse {
     margin-top: 5rem;
-
   }
 
   .registrarse {
