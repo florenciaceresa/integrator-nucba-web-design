@@ -378,6 +378,12 @@ iframe {
   margin-top: 1rem;
 }
 
+.section__map .phone a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+
 
 /* ----------- FOOTER ----------*/
 .footer {
@@ -775,12 +781,20 @@ i.fa-solid.fa-arrow-left:hover {
     background-color: #fff;
   }
 
+  .hero__container.registrarse {
+    margin-top: 5rem;
+
+  }
+
   .registrarse {
     font-size: 0.8rem;
   }
 
   .acepto-terminos {
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
  
   .container-button-ingresar,
