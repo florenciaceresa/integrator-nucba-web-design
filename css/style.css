@@ -123,11 +123,35 @@ p {
   width: 85%;
   display: flex;
   margin: 0 auto;
-  align-items: center;
   gap: 2rem;
   background-image: url(../assets/img-hero.png);
   background-size: cover;
   background-position: center;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero-description {
+  text-align: end;
+  margin-right: 3rem; 
+}
+
+h1 {
+  background-color: var(--first-color);
+  color: #fff;
+  font-family: var(--second-font-family);
+  font-size: 3.5rem !important; 
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description p {
+  background-color: var(--first-color);
+  color: #fff;
+  display: inline-block;
+  font-family: var(--second-font-family);
+  font-size: 2rem;
+  padding: 0.7rem;
 }
 
 
@@ -715,6 +739,22 @@ i.fa-solid.fa-arrow-left:hover {
   /* ----------- HERO ----------*/
   .section__hero {
     height: 50vh;
+  }
+
+  .hero-description {
+    margin-right: 1.5rem; 
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+    padding: 0.3rem;
+  }
+  
+  .hero-description p {
+    font-size: 1rem;
+    padding: 0.3rem;
+
   }
 
   
