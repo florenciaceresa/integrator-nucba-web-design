@@ -142,7 +142,7 @@ h1 {
   font-family: var(--second-font-family);
   font-size: 3.5rem !important; 
   padding: 0.7rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .hero-description p {
