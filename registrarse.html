@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donata</title>
-
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/SVG/favicon.png"/>
+    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Styles -->
     <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
+
     <!--HEADER-->
     <header class="header header__ingresar">
         <nav class="navbar">
             <label for="toggle-menu">
                 <a href="index.html">
-                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="navbar__return-icon fa-solid fa-arrow-left"></i>
                 </a>
             </label>
             <input type="checkbox" id="toggle-menu">
@@ -24,36 +28,36 @@
 
     <main>
         <!--HERO-->
-        <section class="section section__hero hero__ingresar" id="home">
-            <div class="container-hero-imagen">
-            </div>
-            <div class="container-hero-ingresar">
-                <div class="hero__container registrarse">
+        <section class="section__sign-up" id="home">
+            <div class="sign-up-image"></div>
+            <div class="sign-up-content-container">
+                <div class="sign-up-container">
                     <h2>REGISTRARSE</h2>
-                    <div class="container-inputs">
+                    <div class="inputs-container">
                         <div class="input-container">
-                            <i class="fa-solid fa-user"></i>
-                            <input type="text" placeholder="Nombre completo" class="input-form input-login" required>
+                            <i class="user-icon fa-solid fa-user"></i>
+                            <input type="text" placeholder="Nombre completo" class="input-form input-sign-up" required>
                         </div>
                         <div class="input-container">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="text" placeholder="Contraseña" class="input-form input-login" required>
+                            <i class="password-icon fa-solid fa-lock"></i>
+                            <input type="text" placeholder="Contraseña" class="input-form input-sign-up" required>
                         </div>
                         <div class="input-container">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder="Email" class="input-form input-login" required>
+                            <i class="email-icon fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email" class="input-form input-sign-up" required>
                         </div>
-                        <div class="acepto-terminos">
+                        <div class="accept-conditions">
                             <input type="checkbox">
                             <p>Acepto términos y condiciones</p>
                         </div>
-                        <div class="container-button-registrarse">
-                            <input type="submit" value="Registrarse" class="secton__form-button button-registrarse">
+                        <div class="button-sign-up-container">
+                            <input type="submit" value="Registrarse" class="button">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
     </main>
     
 </body>

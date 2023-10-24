@@ -10,7 +10,6 @@
     --first-font-family: 'Roboto', sans-serif;
     --second-font-family: 'Nunito', sans-serif;
     --third-font-family: 'Montserrat', sans-serif;
-  
   }
   
 * {
@@ -27,6 +26,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
@@ -56,37 +56,18 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header__ingresar {
-  box-shadow: none;
-  background-color: transparent;
-}
-
 .header__logo-1 {
   width: 8rem;
-}
-
-.header__logo-1__registrarse {
-  display: none;
 }
 
 .header__logo-2 {
   display: none;
 }
 
-.navbar__bar {
-  width: 25px;
-  height: 2px;
-  background-color: var(--font-color);
-  margin: 7px 0;
-  cursor: pointer;
-}
-
 #toggle-menu,
-.fa-solid.fa-bars {
+.menu-icon {
   display: none;
 }
-
-
 
 .navbar__list {
   list-style: none;
@@ -118,7 +99,6 @@ p {
   display: flex;
 }
 
-
 .section__hero-container {
   width: 85%;
   display: flex;
@@ -131,7 +111,7 @@ p {
   align-items: center;
 }
 
-.hero-description {
+.section__hero-description {
   text-align: end;
   margin-right: 3rem; 
 }
@@ -145,7 +125,7 @@ h1 {
   margin-bottom: 0.8rem;
 }
 
-.hero-description p {
+.section__hero-description p {
   background-color: var(--first-color);
   color: #fff;
   display: inline-block;
@@ -153,7 +133,6 @@ h1 {
   font-size: 2rem;
   padding: 0.7rem;
 }
-
 
 
 
@@ -180,18 +159,6 @@ h1 {
 }
 
 
-
-
-/* ----------- PHRASE ----------*/
-.section__phrase {
-  background-color: var(--second-color);
-  display: flex;
-}
-
-.section__phrase-container {
-  width: 75%;
-  margin: 8rem auto;
-}
 
 
 
@@ -222,6 +189,39 @@ h1 {
   margin: 15px;
 }
 
+.product-img {
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.product-img img {
+  width: 12rem;
+}
+
+.product-1 {
+  background-color: var(--second-color);
+}
+
+.product-2 {
+  background-color: var(--third-color);
+}
+
+.product-3 {
+  background-color: var(--fourth-color);
+}
+
+.product-img img.vanilla-donut {
+  width: 14rem;
+}
+
+.product-img img.strawberry-donut {
+  width: 8.5rem;
+}
+
 .price {
   font-weight: bold;
   margin-top: 0.5rem;
@@ -249,38 +249,8 @@ h1 {
   align-items: center;
 }
 
-.product-img {
-  width: 18rem;
-  height: 18rem;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  justify-content: center;
-}
 
-.product-img img {
-  width: 12rem;
-}
 
-.product-img img.dona-vainilla {
-  width: 14rem;
-}
-
-.product-img img.dona-fresa {
-  width: 8.5rem;
-}
-
-.product-1 {
-  background-color: var(--second-color);
-}
-
-.product-2 {
-  background-color: var(--third-color);
-}
-
-.product-3 {
-  background-color: var(--fourth-color);
-}
 
 
 /* ----------- OFFERS ----------*/
@@ -302,8 +272,6 @@ h1 {
   margin: 1rem;
 }
 
-
-
 .section__offers-container div i {
   font-size: 2rem;
   margin-bottom: 1.3rem;
@@ -313,16 +281,11 @@ h3 {
   margin-bottom: 0.8rem;
 }
 
-
 .section__offers-container .line {
   width: 2px;
   height: 7rem;
   background-color: var(--font-color);
 }
-
-
-
-
 
 
 
@@ -340,35 +303,43 @@ h3 {
   justify-content: space-between;
 }
 
-.section__map {
+.contact-info-container {
   width: 48%;
   display: flex;
   flex-direction: column;
 }
 
-.section__map div {
+.contact-info-container div {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
-.section__form {
+.contact-info-container .phone a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.contact-info-container .fa-brands {
+  color: var(--font-color);
+}
+
+.contact-info-container .fa-brands:hover {
+  color: var(--first-color);
+}
+
+iframe {
+  margin-top: 1rem;
+}
+
+.contact-form-container {
   width: 48%;
   gap: 2rem;
   display: flex;
   flex-direction: column;
 }
 
-.section__map .fa-brands {
-  color: var(--font-color);
-}
-
-.section__map .fa-brands:hover {
-  color: var(--first-color);
-
-}
-
-.section__form div {
+.contact-form-container div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -386,26 +357,19 @@ textarea {
 
 }
 
-.secton__form-button {
+.button {
   background-color: var(--first-color);
   width: 6rem;
   border: none;
   color: #fff;
 }
 
-.secton__form-button:hover {
+.button:hover {
   background-color: var(--second-color);
   cursor: pointer;
 }
 
-iframe {
-  margin-top: 1rem;
-}
 
-.section__map .phone a {
-  text-decoration: none;
-  color: var(--font-color);
-}
 
 
 
@@ -445,7 +409,6 @@ iframe {
   width: 10rem;
 }
 
-
 .footer__nav {
   display: flex;
   flex-direction: column;
@@ -471,8 +434,17 @@ iframe {
 }
 
 
-/* ----------- INGRESAR - REGISTRARSE ----------*/
-i.fa-solid.fa-arrow-left {
+
+
+
+/* ----------- LOGIN - SIGN UP ----------*/
+/* ----------- HEADER ----------*/
+.header__ingresar {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.navbar__return-icon {
   color: var(--first-color);
   font-size: 1.3rem;
   transition: 0.3s;
@@ -481,17 +453,20 @@ i.fa-solid.fa-arrow-left {
   border-radius: 100%;
 }
 
-i.fa-solid.fa-arrow-left:hover {
+.navbar__return-icon:hover {
   background-color: var(--first-color);
   color: #fff;
 }
 
 
-.hero__ingresar {
+/* ----------- CONTENT ----------*/
+.section__login,
+.section__sign-up {
   display: flex;
 }
 
-.container-hero-imagen {
+.login-image,
+.sign-up-image {
   background-image: url(../assets/img-login.jpg);
   width: 50%;
   height: 100vh;
@@ -499,7 +474,8 @@ i.fa-solid.fa-arrow-left:hover {
   background-position: center;
 }
 
-.container-hero-ingresar {
+.login-content-container,
+.sign-up-content-container {
   width: 50%;
   height: 100vh;
   display: flex;
@@ -507,7 +483,8 @@ i.fa-solid.fa-arrow-left:hover {
   justify-content: center;
 }
 
-.hero__container {
+.login-container,
+.sign-up-container {
   background-image: none;
   width: 75%;
   height: auto;
@@ -517,11 +494,12 @@ i.fa-solid.fa-arrow-left:hover {
   text-align: center;
 }
 
-.hero__container img {
+.login-container img,
+.sign-up-container img {
   width: 10rem;
 }
 
-.container-inputs {
+.inputs-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -537,60 +515,36 @@ i.fa-solid.fa-arrow-left:hover {
   width: 100%;
 }
 
-.hero__container .login .user {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section__hero-img img {
-  max-width: 100%;
-  height: auto;
-}
-
-
-.fa-solid.fa-user,
-.fa-solid.fa-lock,
-.fa-solid.fa-envelope {
+.user-icon,
+.password-icon,
+.email-icon {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
 }
 
-.input-login {
+.input-login,
+.input-sign-up {
   width: 100%;
   border-radius: 0;
   background-color: #fff;
   border-bottom: 1px solid var(--font-color);
 }
 
-.input-login::placeholder {
+.input-login::placeholder,
+.input-sign-up::placeholder {
   color: var(--font-color);
+  font-size: 1rem;
 }
 
-.hero__container p a {
+.login-container .sign-up a {
   font-weight: bold;
   color: var(--first-color);
   text-decoration: none;
 }
 
-.input-container.checkbox {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.secton__form-button.button-ingresar {
-  color: #fff;
-}
-
-.secton__form-button.button-registrarse {
-  color: #fff;
-  width: 7rem;
-}
-
-
-.acepto-terminos {
+.accept-conditions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -600,15 +554,12 @@ i.fa-solid.fa-arrow-left:hover {
 
 
 
-
-
+/* ----------- TABLET ----------*/
 @media (max-width: 992px) {
-
   /* ----------- HEADER ----------*/
   .header {
     justify-content: space-between;
     padding: 0px 70px;
-
   }
 
   .header__logo-1 {
@@ -628,14 +579,14 @@ i.fa-solid.fa-arrow-left:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .fa-solid.fa-bars {
+  .menu-icon {
     display: block;
     font-size: 1.5rem;
     color: var(--font-color);
     cursor: pointer;
   }
 
-  .fa-solid.fa-bars:hover {
+  .menu-icon:hover {
     color: var(--first-color);
   }
 
@@ -648,12 +599,14 @@ i.fa-solid.fa-arrow-left:hover {
   }
 
 
+
+
+
   /* ----------- ABOUT ----------*/
   .section__about-container {
     flex-direction: column;
     gap: 4rem;
   }
-
 
   .section__about-info {
     order: 1;
@@ -669,18 +622,14 @@ i.fa-solid.fa-arrow-left:hover {
     width: 60%;
     margin: 0 auto;
   }
-
 }
 
 
 
 
 
-
-
-
+/* ----------- MOBILE ----------*/
 @media (max-width: 576px) {
-
   /* ----------- HEADER ----------*/
   .header {
     padding: 0px 30px;
@@ -708,14 +657,14 @@ i.fa-solid.fa-arrow-left:hover {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .fa-solid.fa-bars {
+  .menu-icon {
     display: block;
     font-size: 1.5rem;
     color: var(--font-color);
     cursor: pointer;
   }
 
-  .fa-solid.fa-bars:hover {
+  .menu-icon:hover {
     color: var(--first-color);
   }
 
@@ -727,21 +676,16 @@ i.fa-solid.fa-arrow-left:hover {
     display: flex;
   }
 
-  #toggle-menu,
-  .fa-solid.fa-arrow-left {
-    position: relative;
-    top: 0.5rem;
-    right: 0.5rem;
-    color: var(--font-color);
-    font-size: 1.3rem;
-  }
+
+
+  
 
   /* ----------- HERO ----------*/
   .section__hero {
     height: 50vh;
   }
 
-  .hero-description {
+  .section__hero-description {
     margin-right: 1.5rem; 
     margin-top: 4rem;
   }
@@ -749,13 +693,14 @@ i.fa-solid.fa-arrow-left:hover {
   h1 {
     font-size: 1.5rem !important;
     padding: 0.3rem;
+    display: inline-block;
   }
   
-  .hero-description p {
+  .section__hero-description p {
     font-size: 1rem;
     padding: 0.3rem;
-
   }
+
 
   
 
@@ -788,10 +733,13 @@ i.fa-solid.fa-arrow-left:hover {
 
 
 
+
+
   /* ----------- PRODUCTS ----------*/
   .section__products-container {
     margin: 0 auto 3rem;
   }
+
 
 
 
@@ -809,6 +757,9 @@ i.fa-solid.fa-arrow-left:hover {
   }
 
 
+
+
+
   /* ----------- CONTACT ----------*/
   .section__contact-container {
     flex-direction: column;
@@ -817,58 +768,20 @@ i.fa-solid.fa-arrow-left:hover {
     gap: 4rem;
   }
 
-  .section__map {
+  .contact-info-container {
     width: 100%;
   }
 
-  .section__map h2 {
+  .contact-info-container h2 {
     margin: 0 auto 1.5rem;
   }
 
-  .section__form {
+  .contact-form-container {
     width: 100%;
   }
 
 
 
-  /* ----------- INGRESAR - REGISTRARSE ----------*/
-  i.fa-solid.fa-arrow-left {
-    margin: 1.5rem;
-  }
-
-  .container-hero-imagen {
-    display: none;
-  }
-
-  .container-hero-ingresar {
-    width: 100%;
-    background-image: url(../assets/img-hero.png);
-    background-size: cover;
-  }
-
-  .hero__container {
-    background-color: #fff;
-  }
-
-  .hero__container.registrarse {
-    margin-top: 5rem;
-  }
-
-  .registrarse {
-    font-size: 0.8rem;
-  }
-
-  .acepto-terminos {
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
- 
-  .container-button-ingresar,
-  .container-button-registrarse {
-    margin: 0 auto;
-  }
 
 
 /* ----------- FOOTER ----------*/
@@ -888,4 +801,65 @@ i.fa-solid.fa-arrow-left:hover {
 .footer__contact {
   display: none;
 }
+
+
+
+
+
+/* ----------- LOGIN - SIGN UP ----------*/
+  /* ----------- HEADER ----------*/
+  #toggle-menu,
+  .navbar__return-icon {
+    position: relative;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: var(--first-color);
+    font-size: 1.3rem;
+  }
+
+  .navbar__return-icon {
+    margin: 1.5rem;
+    color: var(--first-color);
+  }
+
+
+  /* ----------- CONTENT ----------*/
+  .login-image,
+  .sign-up-image {
+    display: none;
+  }
+
+  .login-content-container,
+  .sign-up-content-container {
+    width: 100%;
+    background-image: url(../assets/img-hero.png);
+    background-size: cover;
+  }
+
+  .login-container,
+  .sign-up-container {
+    background-color: #fff;
+  }
+
+  .sign-up-container {
+    margin-top: 5rem;
+    font-size: 0.8rem;
+  }
+
+  .accept-conditions {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+ 
+  .button-login-container,
+  .button-sign-up-container {
+    margin: 0 auto;
+  }
+
+  .sign-up {
+    display: flex;
+    font-size: 0.9rem;
+  }
 }
