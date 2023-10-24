@@ -148,6 +148,7 @@ h1 {
   margin: 8rem auto;
   width: 75%;
   gap: 5rem;
+  align-items: center;
 }
 
 .section__about-img img {
