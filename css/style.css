@@ -196,12 +196,10 @@ h1 {
   margin: 0 auto;
   margin-bottom: 1rem;
   justify-content: center;
-  align-items: center;
 }
 
 .product-img img {
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
 }
 
 .product-1 {
